@@ -1,0 +1,131 @@
+
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" class="ri-command-line" href="/assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIX ICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="{% static 'core/assets/css/style.css' %}">
+
+   <title>Home Page Hehe</title>
+</head>
+</head>
+<body>
+     <header class="header" id="header">
+       <nav class="nav container">
+           <a href="#" class="nav__logo">
+               <i class="ri-mail-line nav__logo-icon"></i>AI Hackathon
+           </a>
+
+
+
+           <div class="nav__btns">
+               <!-- Theme change button -->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+               <div class="nav__toggle" id="nav-toggle">
+                   <i class="ri-menu-line"></i>
+               </div>
+           </div>
+       </nav>
+   </header>
+
+   <main class="main">
+        <section class="contact section container" id="home">
+           <div class="home__container container grid">
+
+               <div class="home__data">
+                   <h1 class="home__title">
+                       Hackathon hehe <br> 
+                   </h1>
+                   <p class="home__description">
+                      We analyse your passage, set and answer questions for you <br>Paste passage or upload the file
+                   </p>
+
+       </section>
+          <!--==================== CONTACT ====================-->
+          <section class="contact section container" id="contact">
+           <div class="contact__container grid">
+               <div class="contact__box">
+               <div  class="contact__form">
+                   <div class="contact__inputs">
+
+
+                       <div class="contact__content">
+                           <input type="text" name="title" placeholder="" id="title" class="contact__input">
+                           <label for="" class="contact__label">Title of Passage</label>
+                       </div>
+
+                       <div class="contact__content contact__area">
+                        <textarea name="passage" placeholder=" " id="passage" class="contact__input"></textarea>
+                        <label for="" class="contact__label">Paste the entire passage</label>
+                    </div>
+                            <p>or</p>
+                       <div class="contact__content">
+                           <input type="file" name="files"  id="files" class="contact__input">
+                           <label for="" class="contact__label">Pick File</label>
+                       </div>
+            
+                       
+                   </div>
+                    <div class="button" onclick="changeValue()">
+                   <button id="contact" onclick="BtnContact(event)" class="spam-btn button button--flex">
+                       Analyse
+                       <i class="ri-arrow-right-up-line button__icon"></i>
+                   </button>
+                   </div>
+               </div>
+               <div class="contact__data">
+                       <div class="contact__information">
+                           <h3 class="contact__subtitle">
+                               
+                           </h3>
+                           
+                       </div>
+
+                       <div class="contact__information">
+                           <h3 class="contact__subtitle">
+                               Yktv
+                           </h3>
+                
+                            <span class="contact__description">
+                               <i class="ri-twitter-fill contact__icon"></i>
+                              <a href="http://twitter.com/1madvirus">Team MegaXord</a> 
+                           </span><br>
+                            <span class="contact__description">
+                               <i class="ri-github-fill contact__icon"></i>
+                              <a href="http://github.com/madvirus-ops">Team MegaXord</a> 
+                           </span>
+                           
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+   </main>
+  
+   <!--=============== SCROLL UP ===============-->
+   <a href="#" class="scrollup" id="scroll-up">
+       <i class="ri-arrow-up-fill scrollup__icon"></i>
+   </a>
+   <!--=============== SCROLL REVEAL ===============-->
+   <script src="{% static 'core/assets/js/scrollreveal.min.js' %}"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="{% static 'core/assets/js/main.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="/assets/js/anon.js"></script>
+</body>
+</html>
+
