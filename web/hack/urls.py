@@ -21,3 +21,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("",include("core.urls")),
 ]
+
+admin.site.site_header = "team MegaXord admin"
+admin.site.site_title = "project name"
+admin.site.index_title = "welcome shithead"
