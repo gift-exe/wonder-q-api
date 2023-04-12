@@ -1,0 +1,1 @@
+web: sh -c 'python manage.py migrate && gunicorn web/hack.wsgi'

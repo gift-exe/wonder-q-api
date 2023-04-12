@@ -79,3 +79,66 @@
 2023-04-10 13:12:10,984 django.request WARNING  Not Found: /assets/img/favicon.png
 2023-04-10 13:18:02,085 django.request WARNING  Not Found: /assets/js/anon.js
 2023-04-10 13:18:13,418 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-04-11 22:14:46,391 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:15:11,013 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:15:13,158 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:15:29,704 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:15:30,696 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:15:34,065 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:15:35,161 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:15:40,519 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:15:41,418 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:15:43,694 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:15:44,463 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:05,991 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:06,770 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:08,026 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:08,747 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:14,972 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:15,769 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:19,123 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:19,987 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:22,281 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:23,239 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:25,576 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:26,375 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:27,750 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:28,554 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:29,932 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:30,837 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:32,298 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:33,239 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:37,639 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:38,531 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:39,849 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:40,559 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:44,884 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:45,818 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:48,182 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:49,055 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:16:50,370 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/urls.py changed, reloading.
+2023-04-11 22:16:51,432 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:18:18,653 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-11 22:18:28,786 django.request WARNING  Not Found: /favicon.ico
+2023-04-12 07:01:11,231 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-12 07:01:29,090 django.request WARNING  Not Found: /favicon.ico
+2023-04-12 07:01:32,709 django.request WARNING  Not Found: /assets/js/anon.js
+2023-04-12 07:01:33,599 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-04-12 07:12:28,591 django.request WARNING  Not Found: /assets/js/anon.js
+2023-04-12 07:14:49,267 django.request WARNING  Not Found: /assets/js/anon.js
+2023-04-12 07:14:49,270 django.request WARNING  Not Found: /assets/img/body.jpg
+2023-04-12 07:14:50,334 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-04-12 07:16:45,913 django.request WARNING  Not Found: /assets/js/anon.js
+2023-04-12 07:16:45,937 django.request WARNING  Not Found: /assets/img/body.jpg
+2023-04-12 07:16:47,027 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-04-12 07:19:28,446 django.request WARNING  Not Found: /assets/js/anon.js
+2023-04-12 07:19:28,454 django.request WARNING  Not Found: /assets/img/body.jpg
+2023-04-12 07:19:29,335 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-04-12 07:25:56,104 django.request WARNING  Not Found: /assets/js/anon.js
+2023-04-12 07:25:57,668 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-04-12 07:26:40,652 django.request WARNING  Not Found: /assets/js/anon.js
+2023-04-12 07:26:43,129 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-04-12 07:26:56,552 django.request WARNING  Not Found: /assets/js/anon.js
+2023-04-12 07:26:57,539 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-04-12 07:27:10,639 django.request WARNING  Not Found: /assets/js/anon.js
+2023-04-12 07:27:11,527 django.request WARNING  Not Found: /assets/img/favicon.png
