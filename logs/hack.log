@@ -142,3 +142,11 @@
 2023-04-12 07:26:57,539 django.request WARNING  Not Found: /assets/img/favicon.png
 2023-04-12 07:27:10,639 django.request WARNING  Not Found: /assets/js/anon.js
 2023-04-12 07:27:11,527 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-04-12 07:52:57,909 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-12 07:59:34,177 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/manage.py changed, reloading.
+2023-04-12 07:59:35,959 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-12 08:03:03,068 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-12 08:05:23,647 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-12 08:07:11,234 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-04-12 08:07:38,626 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/hack/settings/base.py changed, reloading.
+2023-04-12 08:07:40,297 django.utils.autoreload INFO     Watching for file changes with StatReloader
