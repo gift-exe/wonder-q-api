@@ -15,6 +15,7 @@
 
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="{% static 'core/assets/css/style.css' %}">
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
    <title>Home Page Hehe</title>
 </head>
@@ -23,7 +24,7 @@
      <header class="header" id="header">
        <nav class="nav container">
            <a href="#" class="nav__logo">
-               <i class="ri-mail-line nav__logo-icon"></i>AI Hackathon
+               <i class="ri-question-answer-fill nav__logo-icon"></i>AI Hackathon
            </a>
 
 
@@ -40,6 +41,42 @@
    </header>
 
    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+            <div class="home__img">
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_au4zdsr8.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay ></lottie-player>
+            
+            </div>    
+            <div class="home__data">
+                <h1 class="home__title">
+                    Team MegaXord Projects <br> 
+                </h1>
+                <p class="home__description">
+                   we analyse your paragraphs, set and answer questions for you
+                </p>
+                <a href="#contact" class="button button--flex">
+                    Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                </a>
+            </div>
+
+            <div class="home__social">
+                <span class="home__social-follow">Follow Us</span>
+
+                <div class="home__social-links">
+                    <a href="" target="_blank" class="home__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="" target="_blank" class="home__social-link">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
         <section class="contact section container" id="home">
            <div class="home__container container grid">
 
