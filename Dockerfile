@@ -23,4 +23,4 @@ RUN python manage.py migrate
 EXPOSE 8000
 
 # Start the app using the Django development server
-CMD python project/manage.py runserver 0.0.0.0:8000
+CMD gunicorn hack.wsgi:application --bind 0.0.0.0:8000
