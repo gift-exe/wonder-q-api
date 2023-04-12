@@ -4,4 +4,5 @@ dj-database-url
 black
 autopep8
 psycopg2-binary
+jazzmin
 gunicorn
