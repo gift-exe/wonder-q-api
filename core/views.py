@@ -23,7 +23,7 @@ def index(request):
         
         print(response)
 
-
+        #here down ...experimental, might not work, have not tested
         question = QuestionModel(
             question=response['question']
             
