@@ -25,7 +25,7 @@ class QuestionModel(TimeBasedModel):
 
 class AnswerModel(TimeBasedModel):
     question = models.ForeignKey(
-        QuestionModel, on_delete=models.CASCADE, related_name='questions')
+        QuestionModel, on_delete=models.CASCADE, related_name='answer')
     answer = models.TextField()
 
     def __str__(self):
