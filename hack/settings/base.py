@@ -16,7 +16,7 @@ load_dotenv()
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -138,7 +138,7 @@ import logging
 import logging.config
 from django.utils.log import DEFAULT_LOGGING
 
-LOG_DIR = Path(__file__).resolve().parent.parent.parent.parent
+LOG_DIR = Path(__file__).resolve().parent
 
 logger = logging.getLogger(__name__)
 
@@ -166,7 +166,7 @@ logging.config.dictConfig({
             "level":"INFO",
             "class":"logging.FileHandler",
             "formatter":"file",
-            "filename":f"{LOG_DIR}/logs/hack.log"
+            "filename":f"logs/hack.log"
         },
         "django.server": DEFAULT_LOGGING["handlers"]["django.server"]
     },

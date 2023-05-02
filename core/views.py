@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import AnswerModel,QuestionModel
-from ..pipelines import pipeline
+from .pipelines import pipeline
 
 
 # Create your views here.
