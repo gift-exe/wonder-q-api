@@ -85,3 +85,9 @@ wadllib==1.3.6
 xdg==5
 xkit==0.0.0
 zipp==1.0.0
+nlp==0.4.0
+nltk==3.7 # only if you want to fine tune ... reference readme.md for more info
+protobuf
+sentencepiece==0.1.98
+transformers==3.0.0
+torch

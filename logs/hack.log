@@ -539,3 +539,9 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 194: '
 2023-04-13 11:57:06,094 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/core/views.py changed, reloading.
 2023-04-13 11:57:41,386 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2023-04-13 12:00:35,269 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/web/core/views.py changed, reloading.
+2023-05-02 10:29:36,359 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-02 10:37:16,405 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-02 10:37:27,713 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-02 10:37:29,906 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-02 10:39:22,799 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-02 10:39:23,497 django.request WARNING  Not Found: /assets/img/favicon.png
