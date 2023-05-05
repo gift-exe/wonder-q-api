@@ -570,3 +570,126 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 194: '
 2023-05-02 13:09:33,767 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2023-05-02 13:09:56,993 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2023-05-02 13:11:13,070 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-05 12:44:18,899 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-05 12:44:44,894 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/pipelines.py changed, reloading.
+2023-05-05 12:44:46,061 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-05 12:44:59,842 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-05 12:45:03,970 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-05 12:45:06,190 django.request WARNING  Not Found: /detail
+2023-05-05 12:45:06,625 django.request WARNING  Not Found: /favicon.ico
+2023-05-05 12:45:27,509 django.request WARNING  Not Found: /js/popper.min.js
+2023-05-05 12:45:27,519 django.request WARNING  Not Found: /js/jquery.min.js
+2023-05-05 12:45:27,554 django.request WARNING  Not Found: /js/bootstrap.min.js
+2023-05-05 12:45:27,581 django.request WARNING  Not Found: /js/slick.min.js
+2023-05-05 12:45:27,662 django.request WARNING  Not Found: /js/jquery.sticky-sidebar.min.js
+2023-05-05 12:45:27,682 django.request WARNING  Not Found: /js/custom.js
+2023-05-05 12:45:27,734 django.request WARNING  Not Found: /images/logo.svg
+2023-05-05 12:45:27,766 django.request WARNING  Not Found: /images/other/about.jpg
+2023-05-05 12:45:27,848 django.request WARNING  Not Found: /images/posts/tabs-1.jpg
+2023-05-05 12:45:27,850 django.request WARNING  Not Found: /images/wave.svg
+2023-05-05 12:45:27,942 django.request WARNING  Not Found: /images/posts/tabs-2.jpg
+2023-05-05 12:45:27,946 django.request WARNING  Not Found: /images/posts/tabs-3.jpg
+2023-05-05 12:45:28,024 django.request WARNING  Not Found: /images/widgets/widget-carousel-1.jpg
+2023-05-05 12:45:28,029 django.request WARNING  Not Found: /images/widgets/widget-carousel-2.jpg
+2023-05-05 12:45:28,118 django.request WARNING  Not Found: /images/ads/ad-360.png
+2023-05-05 12:45:28,129 django.request WARNING  Not Found: /images/insta/insta-1.jpg
+2023-05-05 12:45:28,242 django.request WARNING  Not Found: /images/insta/insta-2.jpg
+2023-05-05 12:45:28,252 django.request WARNING  Not Found: /images/insta/insta-3.jpg
+2023-05-05 12:45:28,286 django.request WARNING  Not Found: /images/insta/insta-4.jpg
+2023-05-05 12:45:28,363 django.request WARNING  Not Found: /images/insta/insta-5.jpg
+2023-05-05 12:45:28,390 django.request WARNING  Not Found: /images/insta/insta-6.jpg
+2023-05-05 12:45:33,310 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 12:46:19,706 django.request WARNING  Not Found: /images/logo.svg
+2023-05-05 12:46:19,710 django.request WARNING  Not Found: /images/other/about.jpg
+2023-05-05 12:46:20,639 django.request WARNING  Not Found: /images/wave.svg
+2023-05-05 12:46:20,680 django.request WARNING  Not Found: /images/posts/tabs-1.jpg
+2023-05-05 12:46:20,724 django.request WARNING  Not Found: /images/posts/tabs-2.jpg
+2023-05-05 12:46:20,811 django.request WARNING  Not Found: /images/posts/tabs-3.jpg
+2023-05-05 12:46:20,815 django.request WARNING  Not Found: /images/widgets/widget-carousel-1.jpg
+2023-05-05 12:46:20,914 django.request WARNING  Not Found: /images/widgets/widget-carousel-2.jpg
+2023-05-05 12:46:20,942 django.request WARNING  Not Found: /images/ads/ad-360.png
+2023-05-05 12:46:20,970 django.request WARNING  Not Found: /images/insta/insta-1.jpg
+2023-05-05 12:46:21,031 django.request WARNING  Not Found: /images/insta/insta-2.jpg
+2023-05-05 12:46:21,083 django.request WARNING  Not Found: /images/insta/insta-3.jpg
+2023-05-05 12:46:21,110 django.request WARNING  Not Found: /images/insta/insta-4.jpg
+2023-05-05 12:46:21,214 django.request WARNING  Not Found: /images/insta/insta-5.jpg
+2023-05-05 12:46:21,253 django.request WARNING  Not Found: /images/insta/insta-6.jpg
+2023-05-05 12:46:21,815 django.request WARNING  Not Found: /images/logo.svg
+2023-05-05 12:46:21,947 django.request WARNING  Not Found: /images/map-bg.png
+2023-05-05 12:46:22,108 django.request WARNING  Not Found: /images/widgets/widget-carousel-1.jpg
+2023-05-05 12:46:25,863 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 12:47:52,371 django.request WARNING  Not Found: /images/logo.svg
+2023-05-05 12:47:52,379 django.request WARNING  Not Found: /images/other/about.jpg
+2023-05-05 12:47:53,147 django.request WARNING  Not Found: /images/insta/insta-1.jpg
+2023-05-05 12:47:53,166 django.request WARNING  Not Found: /images/insta/insta-2.jpg
+2023-05-05 12:47:53,249 django.request WARNING  Not Found: /images/insta/insta-3.jpg
+2023-05-05 12:47:53,288 django.request WARNING  Not Found: /images/insta/insta-6.jpg
+2023-05-05 12:47:53,313 django.request WARNING  Not Found: /images/insta/insta-5.jpg
+2023-05-05 12:47:53,321 django.request WARNING  Not Found: /images/insta/insta-4.jpg
+2023-05-05 12:47:53,452 django.request WARNING  Not Found: /images/logo.svg
+2023-05-05 12:47:55,190 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 12:48:37,207 django.request WARNING  Not Found: /images/other/about.jpg
+2023-05-05 12:48:37,216 django.request WARNING  Not Found: /images/insta/insta-1.jpg
+2023-05-05 12:48:37,245 django.request WARNING  Not Found: /images/insta/insta-2.jpg
+2023-05-05 12:48:37,336 django.request WARNING  Not Found: /images/insta/insta-3.jpg
+2023-05-05 12:48:37,430 django.request WARNING  Not Found: /images/insta/insta-4.jpg
+2023-05-05 12:48:37,477 django.request WARNING  Not Found: /images/insta/insta-5.jpg
+2023-05-05 12:48:37,560 django.request WARNING  Not Found: /images/insta/insta-6.jpg
+2023-05-05 12:48:37,646 django.request WARNING  Not Found: /images/logo.svg
+2023-05-05 12:48:39,492 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 12:49:29,320 django.request WARNING  Not Found: /images/other/about.jpg
+2023-05-05 12:49:31,487 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 12:50:37,793 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 12:51:04,210 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-05 12:51:05,996 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-05 12:52:44,599 django.request ERROR    Internal Server Error: /posts
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/madvirus/Documents/ai_hackathon/core/views.py", line 54, in details_page
+    return render(request,'core/more.html',context)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 11: 'static'. Did you forget to register or load this tag?
+2023-05-05 12:52:47,127 django.request WARNING  Not Found: /favicon.ico
+2023-05-05 12:53:09,906 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 12:53:52,501 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 12:54:42,416 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 12:56:42,255 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 12:57:06,513 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 12:59:45,734 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 13:00:27,910 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 13:00:50,102 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 13:01:13,017 django.request WARNING  Not Found: /images/favicon.png
+2023-05-05 13:01:38,201 django.request WARNING  Not Found: /images/favicon.png

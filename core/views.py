@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import AnswerModel,QuestionModel
-from .pipelines import pipeline
+# from .pipelines import pipeline
 
 
 # Create your views here.
@@ -51,7 +51,7 @@ def details_page(request):
     context = {
         "questions":query_obj
     }
-    return render(request,'core/details.html',context)
+    return render(request,'core/more.html',context)
 
 
 #taskss
