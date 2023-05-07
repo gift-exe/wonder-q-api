@@ -693,3 +693,11 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 11: 's
 2023-05-05 13:00:50,102 django.request WARNING  Not Found: /images/favicon.png
 2023-05-05 13:01:13,017 django.request WARNING  Not Found: /images/favicon.png
 2023-05-05 13:01:38,201 django.request WARNING  Not Found: /images/favicon.png
+2023-05-07 09:43:05,271 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-07 09:43:12,466 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-07 09:44:02,418 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-07 09:44:13,466 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-07 09:44:20,468 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-07 09:45:30,255 django.utils.autoreload INFO     /home/g1f7/Documents/ai_hackathon/ai_hackathon/core/views.py changed, reloading.
+2023-05-07 09:45:30,774 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-07 09:45:36,868 django.utils.autoreload INFO     Watching for file changes with StatReloader

@@ -1,47 +1,44 @@
 from django.shortcuts import render
 from .models import AnswerModel,QuestionModel
-# from .pipelines import pipeline
+from .pipelines import pipeline
+import os
 
 
-# Create your views here.
 
-
+np = pipeline('multitask-qa-qg')
 
 def index(request):
-    
+
     if request.method == 'POST':
         
-
         #extract the required 
-        context = request.POST.post('context')
-        passage = request.POST.post('passage')
-    
-        #init the models
-        np = pipeline("multitask-qa-qg")
+        passage = request.POST.get('passage')
 
         response = np(str(passage))
         
-        print(response)
 
         #here down ...experimental, might not work, have not tested
-        question = QuestionModel(
-            question=response['question']
-            
-        )
-        question.save()
+        questions = []
+        answers = []
+        for qa_pair in response:
+            # question = QuestionModel(
+            #     question=qa_pair['question']
+                
+            # )
+            # question.save()
 
-        answer = AnswerModel(
-            question=question,
-            answer=response['answer']
-        )
+            # answer = AnswerModel(
+            #     question=question,
+            #     answer=qa_pair['answer']
+            # )
+            # answer.save()
 
-        answer.save()
 
-        context = {"question":response['question'],
-                    "answer":response['answer']
+            questions.append(qa_pair['question'])            
+            answers.append(qa_pair['answer'])
+
         
-        }
-        return render(request,'core/details.html',context)
+        return render(request,'core/details.html',{"questions":questions, "answers":answers})
 
     return render(request,'core/home.html')
 
@@ -51,7 +48,7 @@ def details_page(request):
     context = {
         "questions":query_obj
     }
-    return render(request,'core/more.html',context)
+    return render(request,'core/details.html',context)
 
 
 #taskss

@@ -17,7 +17,7 @@
    <link rel="stylesheet" href="{% static 'core/assets/css/style.css' %}">
    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-   <title>Home Page Hehe</title>
+   <title>Home Page</title>
 </head>
 </head>
 <body>
@@ -51,69 +51,34 @@
             </div>     -->
             <div class="home__data">
                 <h1 class="home__title">
-                    Team MegaXord Projects <br> 
+                    Wonder Q <br> 
                 </h1>
                 <p class="home__description">
-                   we analyse your paragraphs, set and answer questions for you
+                   Ai Tool for self study
                 </p>
-                <a href="#contact" class="button button--flex">
-                    Explore <i class="ri-arrow-right-down-line button__icon"></i>
-                </a>
-            </div>
-
-            <div class="home__social">
-                <span class="home__social-follow">Follow Us</span>
-
-                <div class="home__social-links">
-                    <a href="" target="_blank" class="home__social-link">
-                        <i class="ri-facebook-fill"></i>
-                    </a>
-                    <a href="" target="_blank" class="home__social-link">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-                    <a href="" target="_blank" class="home__social-link">
-                        <i class="ri-twitter-fill"></i>
-                    </a>
-                </div>
+                <p class="home__description">
+                    Generate study questions for your reading material with our Ai powered tool
+                 </p>
             </div>
         </div>
     </section>
-    <section class="contact section container" id="home">
-           <div class="home__container container grid">
-
-               <div class="home__data">
-                   <h1 class="home__title">
-                       Hackathon hehe <br> 
-                   </h1>
-                   <p class="home__description">
-                      We analyse your passage, set and answer questions for you <br>
-                   </p>
-
-    </section>
-          <!--==================== CONTACT ====================-->
+          
           <section class="contact section container" id="contact">
            <div class="contact__container grid">
                <div class="contact__box">
                <form method="post"  class="contact__form">
+                {% csrf_token %}
                    <div class="contact__inputs">
-
-
-                       <div class="contact__content">
-                           <input type="text" name="title" placeholder="" id="title" class="contact__input">
-                           <label for="" class="contact__label">Context </label>
-                       </div>
-
                        <div class="contact__content contact__area">
                         <textarea name="passage" placeholder=" " id="passage" class="contact__input"></textarea>
-                        <label for="" class="contact__label">Paste the entire passage</label>
+                        <label for="" class="contact__label">Paste passage</label>
                     </div>
                             <!-- <p>or</p>
                        <div class="contact__content">
                            <input type="file" name="files"  id="files" class="contact__input">
                            <label for="" class="contact__label">Pick File</label>
                        </div> -->
-            
-                       
+
                    </div>
                     <div class="button" onclick="changeValue()">
                    <button id="contact" onclick="BtnContact(event)" class="spam-btn button button--flex">
@@ -122,42 +87,18 @@
                    </button>
                    </div>
                </form>
-               <div class="contact__data">
-                       <div class="contact__information">
-                           <h3 class="contact__subtitle">
-                               
-                           </h3>
-                           
-                       </div>
 
-                       <div class="contact__information">
-                           <h3 class="contact__subtitle">
-                               Yktv
-                           </h3>
-                
-                            <span class="contact__description">
-                               <i class="ri-twitter-fill contact__icon"></i>
-                              <a href="">Team MegaXord</a> 
-                           </span><br>
-                            <span class="contact__description">
-                               <i class="ri-github-fill contact__icon"></i>
-                              <a href="">Team MegaXord</a> 
-                           </span>
-                           
-                       </div>
-                   </div>
-               </div>
            </div>
        </section>
 
    </main>
   
    <!--=============== SCROLL UP ===============-->
-   <a href="#" class="scrollup" id="scroll-up">
+   <!-- <a href="#" class="scrollup" id="scroll-up">
        <i class="ri-arrow-up-fill scrollup__icon"></i>
-   </a>
+   </a> -->
    <!--=============== SCROLL REVEAL ===============-->
-   <script src="{% static 'core/assets/js/scrollreveal.min.js' %}"></script>
+   <!-- <script src="{% static 'core/assets/js/scrollreveal.min.js' %}"></script> -->
 
    <!--=============== MAIN JS ===============-->
    <script src="{% static 'core/assets/js/main.js' %}"></script>
