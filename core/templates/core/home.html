@@ -117,11 +117,18 @@
             success: function(response) {
                 if (response.status === 200) {
                     console.log("success")
+                    console.log(response.questions)
+                    console.log(response.answers)
 
-                // Redirect the user after a delay
-                // setTimeout(function() {
-                //     window.location.href = "/path/to/redirect";
-                // }, 3000);
+                    // Save the response to localStorage
+
+                    localStorage.clear();
+
+                    localStorage.setItem('questions', JSON.stringify(response.questions));
+                    localStorage.setItem('answers', JSON.stringify(response.answers));
+
+                    // Redirect the user after a delay
+                    window.location.href = "/details"
                 } else {
     
                 }

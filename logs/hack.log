@@ -856,3 +856,194 @@ NameError: name 'JsonResponse' is not defined
 2023-05-08 07:18:23,684 django.request WARNING  Not Found: /assets/img/favicon.png
 2023-05-08 07:18:30,928 django.request WARNING  Not Found: /path/to/redirect
 2023-05-08 07:18:32,911 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 09:09:47,669 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 09:11:30,052 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 09:13:57,482 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 09:16:19,828 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 09:18:10,896 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 09:18:25,238 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 09:20:35,015 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 11:04:18,672 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 11:05:25,200 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 11:09:04,324 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 11:10:39,502 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 11:12:00,720 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 11:16:10,537 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 11:18:47,974 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 11:25:18,073 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 11:26:16,416 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 11:27:36,942 django.request WARNING  Not Found: /details
+2023-05-08 11:27:38,719 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 11:28:32,486 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/urls.py changed, reloading.
+2023-05-08 11:28:40,445 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 11:30:55,073 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 11:33:34,070 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 11:35:01,012 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 11:44:10,028 django.request ERROR    Internal Server Error: /details
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/madvirus/Documents/ai_hackathon/core/views.py", line 53, in details_page
+    return render(request,'core/details.html',context)
+NameError: name 'context' is not defined
+2023-05-08 11:44:11,549 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 11:44:24,167 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 11:44:55,201 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 11:45:43,764 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 11:47:23,227 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 11:49:12,040 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 11:50:44,830 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 11:53:28,108 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 11:58:56,380 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 11:59:47,814 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:01:36,906 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:03:25,436 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:04:30,766 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:04:35,776 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:06:23,637 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:07:42,285 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:08:03,616 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 12:10:28,645 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:11:08,844 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:12:15,267 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 12:14:00,214 django.request ERROR    Internal Server Error: /details
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/madvirus/Documents/ai_hackathon/core/views.py", line 53, in details_page
+    return render(request,'core/details.html')
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 11: 'static'. Did you forget to register or load this tag?
+2023-05-08 12:14:02,540 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:14:23,129 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:15:47,120 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:17:06,340 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:19:12,263 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:20:51,569 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:21:14,311 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:22:42,347 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:23:32,830 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:24:36,782 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:26:54,538 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:27:33,364 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:29:35,581 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 12:31:31,894 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:31:37,747 django.request ERROR    Internal Server Error: /details
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/madvirus/Documents/ai_hackathon/core/views.py", line 53, in details_page
+    return render(request,'core/details.html')
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 54: 'endfor'. Did you forget to register or load this tag?
+2023-05-08 12:31:39,858 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:32:18,141 django.request ERROR    Internal Server Error: /details
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/madvirus/Documents/ai_hackathon/core/views.py", line 53, in details_page
+    return render(request,'core/details.html')
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 54: 'endfor'. Did you forget to register or load this tag?
+2023-05-08 12:32:19,736 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:33:35,162 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:34:16,980 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 12:34:55,700 django.request WARNING  Not Found: /assets/img/favicon.png

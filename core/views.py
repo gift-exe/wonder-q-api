@@ -46,22 +46,24 @@ def index(request):
 
 
 def details_page(request):
-    query_obj = AnswerModel.objects.all()
-    context = {
-        "questions":query_obj
-    }
-    return render(request,'core/details.html',context)
+    # query_obj = AnswerModel.objects.all()
+    # context = {
+    #     "questions":query_obj
+    # }
+    return render(request,'core/details.html')
+
 
 def processPassage(request):
     form_data = request.body
     form_dict = parse_qs(form_data.decode('utf-8'))
     passage = form_dict.get('passage', [''])[0]
+    
+    questions = []
+    answers = []
 
-    print(passage)
-    return JsonResponse({"status":200})
-
-
-#taskss
-#topic and level of difficulty
-#number of questions they want
-#save questions and options to print as pdf ----
+    response = np(str(passage))
+        
+    for qa_pair in response:
+        questions.append(qa_pair['question'])            
+        answers.append(qa_pair['answer'])        
+    return JsonResponse({"status":200,"questions":questions, "answers":answers})

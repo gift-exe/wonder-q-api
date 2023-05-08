@@ -1,59 +1,102 @@
-{%load static%}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Homepage --hehe</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        plugins: [
-          // ...
-          require("@tailwindcss/forms"),
-        ],
-      };
-    </script>
+       <!--=============== REMIX ICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   </head>
+  <style>
+    body {
+      text-align: center;
+      padding: 10px;
+
+    }
+  </style>
   <body>
-    {% for question in questions %}
-      
-    <div class="block">
-      <div class="card">
-          <div class="card-content">
-          <div class="media">
-              <div class="media-content">
-                <p>
-                    {{ question }}
-                </p>
-              </div>
-          </div>
-          </div>
-      </div>
-    </div>
-  
-    {% endfor %}
-    <!-- {% for answer in answers %}
-      
-    <div class="block">
-      <div class="card">
-          <div class="card-content">
-          <div class="media">
-              <div class="media-content">
-                <p>
-                    {{ answer}}
-                </p>
-              </div>
-          </div>
-          </div>
-      </div>
-    </div>
-  
-    {% endfor %} -->
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <i class="ri-question-answer-fill nav__logo-icon"></i>Wonder Q
+            </a>
     
-    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    </nav>
+
+    <script>
+      // Get the questions from localStorage
+      var questions = JSON.parse(localStorage.getItem('questions'));
+  
+      // Keep track of questions already added to the page
+      var addedQuestions = [];
+      var addedAswers = [];
+  
+      // Loop through the questions and append them to the body
+      for (var i = 0; i < questions.length; i++) {
+          var question = questions[i];
+          if (!addedQuestions.includes(question)) {
+              var block = $('<div class="block"></div>');
+              var card = $('<div class="card"></div>');
+              var cardContent = $('<div class="card-content"></div>');
+              var media = $('<div class="media"></div>');
+              var mediaContent = $('<div class="media-content"></div>');
+              var p = $('<p></p>').text(question);
+  
+              mediaContent.append(p);
+              media.append(mediaContent);
+              cardContent.append(media);
+              card.append(cardContent);
+              block.append(card);
+              $('body').append(block);
+  
+              // Add the question to the list of added questions
+              addedQuestions.push(question);
+          }
+      }
+      // Add an event listener to the "Display Answers" button
+      var btn = $('<div class="block"><button id="display-answers" class="button is-primary">Display Answers</button></div>');
+      $('body').append(btn);
+
+    $('#display-answers').click(function() {
+      // Get the answers from localStorage
+      var answers = JSON.parse(localStorage.getItem('answers'));
+
+      // Loop through the answers and append them to the body
+      for (var i = 0; i < answers.length; i++) {
+        var answer = answers[i];
+        if (!addedAswers.includes(answer)){
+          var block = $('<div class="block"></div>');
+          var card = $('<div class="card"></div>');
+          var cardContent = $('<div class="card-content"></div>');
+          var media = $('<div class="media"></div>');
+          var mediaContent = $('<div class="media-content"></div>');
+          var p = $('<p></p>').text(answer);
+
+          mediaContent.append(p);
+          media.append(mediaContent);
+          cardContent.append(media);
+          card.append(cardContent);
+          block.append(card);
+          $('body').append(block);
+          addedAswers.push(answer);
+        }
+      }
+    });
+  
+  </script>
+  
+  
 
   </body>
 </html>
