@@ -701,3 +701,158 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 11: 's
 2023-05-07 09:45:30,255 django.utils.autoreload INFO     /home/g1f7/Documents/ai_hackathon/ai_hackathon/core/views.py changed, reloading.
 2023-05-07 09:45:30,774 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2023-05-07 09:45:36,868 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-07 15:26:50,265 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-07 15:30:08,120 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-07 15:30:09,612 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-07 15:30:46,131 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/madvirus/Documents/ai_hackathon/core/views.py", line 17, in index
+    response = np(str(passage))
+  File "/home/madvirus/Documents/ai_hackathon/core/pipelines.py", line 176, in __call__
+    return super().__call__(inputs)
+  File "/home/madvirus/Documents/ai_hackathon/core/pipelines.py", line 51, in __call__
+    sents, answers = self._extract_answers(inputs)
+  File "/home/madvirus/Documents/ai_hackathon/core/pipelines.py", line 81, in _extract_answers
+    sents, inputs = self._prepare_inputs_for_ans_extraction(context)
+  File "/home/madvirus/Documents/ai_hackathon/core/pipelines.py", line 115, in _prepare_inputs_for_ans_extraction
+    sents = sent_tokenize(text)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/nltk/tokenize/__init__.py", line 106, in sent_tokenize
+    tokenizer = load(f"tokenizers/punkt/{language}.pickle")
+  File "/home/madvirus/.local/lib/python3.10/site-packages/nltk/data.py", line 750, in load
+    opened_resource = _open(resource_url)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/nltk/data.py", line 876, in _open
+    return find(path_, path + [""]).open()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/nltk/data.py", line 583, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource [93mpunkt[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt/PY3/english.pickle[0m
+
+  Searched in:
+    - '/home/madvirus/nltk_data'
+    - '/usr/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+    - ''
+**********************************************************************
+
+2023-05-07 15:32:00,357 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-07 15:33:20,864 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-07 15:33:24,383 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-07 15:34:19,705 django.request WARNING  Not Found: /favicon.ico
+2023-05-07 19:14:16,588 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-07 19:15:13,403 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-07 19:15:16,443 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-07 19:15:48,452 django.request WARNING  Not Found: /favicon.ico
+2023-05-07 19:21:19,562 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/madvirus/Documents/ai_hackathon/core/views.py", line 41, in index
+    return render(request,'core/details.html',{"questions":questions, "answers":answers})
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 839, in do_for
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'for' statements should use the format 'for x in y': for answer is answers
+2023-05-08 06:35:33,588 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 06:38:22,072 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 06:39:26,704 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-08 06:39:32,780 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 06:40:30,343 django.request WARNING  Not Found: /user/update-profile/
+2023-05-08 06:40:32,317 django.request WARNING  Not Found: /user/update-profile/
+2023-05-08 06:40:33,071 django.request WARNING  Not Found: /user/update-profile/
+2023-05-08 06:40:33,808 django.request WARNING  Not Found: /user/update-profile/
+2023-05-08 06:40:35,320 django.request WARNING  Not Found: /user/update-profile/
+2023-05-08 06:40:36,108 django.request WARNING  Not Found: /user/update-profile/
+2023-05-08 06:40:36,818 django.request WARNING  Not Found: /user/update-profile/
+2023-05-08 06:40:37,576 django.request WARNING  Not Found: /user/update-profile/
+2023-05-08 06:42:03,177 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-08 06:42:06,366 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 06:42:16,269 django.request WARNING  Not Found: /user/update-profile/
+2023-05-08 06:42:47,315 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 06:43:28,608 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 06:44:50,791 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 06:44:51,808 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 06:45:58,578 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 06:46:17,649 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 06:47:10,341 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/urls.py changed, reloading.
+2023-05-08 06:47:16,354 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 06:47:36,104 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/urls.py changed, reloading.
+2023-05-08 06:47:38,287 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 06:48:02,759 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/urls.py changed, reloading.
+2023-05-08 06:48:04,916 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 06:48:36,676 django.request WARNING  Not Found: /assets/js/anon.js
+2023-05-08 06:48:40,373 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 06:48:49,245 django.request ERROR    Internal Server Error: /process/
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/madvirus/Documents/ai_hackathon/core/views.py", line 61, in processPassage
+    return JsonResponse({"status":200})
+NameError: name 'JsonResponse' is not defined
+2023-05-08 06:49:17,984 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 06:49:28,425 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 06:55:24,624 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 06:57:24,388 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 06:59:13,535 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 06:59:51,619 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 07:01:24,534 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 07:07:53,707 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 07:08:33,456 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 07:11:01,875 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 07:12:14,371 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 07:13:32,046 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 07:16:23,797 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 07:17:13,159 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 07:18:23,684 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 07:18:30,928 django.request WARNING  Not Found: /path/to/redirect
+2023-05-08 07:18:32,911 django.request WARNING  Not Found: /favicon.ico

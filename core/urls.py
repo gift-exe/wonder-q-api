@@ -5,4 +5,5 @@ from . import views
 urlpatterns = [
     path("posts",views.details_page,name='details'),
     path("",views.index,name='home2'),
+    path("process/",views.processPassage,name="process"),
 ]

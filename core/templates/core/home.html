@@ -9,22 +9,37 @@
 
    <!--=============== FAVICON ===============-->
    <link rel="shortcut icon" class="ri-command-line" href="/assets/img/favicon.png" type="image/x-icon">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
    <!--=============== REMIX ICONS ===============-->
    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="{% static 'core/assets/css/style.css' %}">
-   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-   <title>Home Page</title>
+
+        <!-- +++======++++shit  -->
+
+
+
+    <!-- Bootstrap Notify CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/css/bootstrap-notify.min.css" />
+
+    <!-- Bootstrap Notify JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-notify/0.2.0/js/bootstrap-notify.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+
+   <title>Wonder Q || Home Page</title>
 </head>
 </head>
 <body>
      <header class="header" id="header">
        <nav class="nav container">
            <a href="#" class="nav__logo">
-               <i class="ri-question-answer-fill nav__logo-icon"></i>AI Hackathon
+               <i class="ri-question-answer-fill nav__logo-icon"></i>Wonder Q
            </a>
 
 
@@ -66,31 +81,62 @@
           <section class="contact section container" id="contact">
            <div class="contact__container grid">
                <div class="contact__box">
-               <form method="post"  class="contact__form">
+               <form class="contact__form" name="passageform">
                 {% csrf_token %}
                    <div class="contact__inputs">
                        <div class="contact__content contact__area">
                         <textarea name="passage" placeholder=" " id="passage" class="contact__input"></textarea>
                         <label for="" class="contact__label">Paste passage</label>
                     </div>
-                            <!-- <p>or</p>
-                       <div class="contact__content">
-                           <input type="file" name="files"  id="files" class="contact__input">
-                           <label for="" class="contact__label">Pick File</label>
-                       </div> -->
 
                    </div>
-                    <div class="button" onclick="changeValue()">
+                    <div class="button">
                    <button id="contact" onclick="BtnContact(event)" class="spam-btn button button--flex">
                        Generate Questions
                        <i class="ri-arrow-right-up-line button__icon"></i>
                    </button>
                    </div>
                </form>
-
+    
+            
            </div>
        </section>
+       <script>
+       function BtnContact(event) {
+        event.preventDefault();
+        var btn = $(event.currentTarget);
+        var originalText = btn.html();
+        btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Processing...');
+        var formData = $(event.currentTarget.form).serialize();
+        // Your existing AJAX code here
+        console.log(formData)
+        $.ajax({
+            url: "/process/",
+            type: 'POST',
+            data: formData,
+            success: function(response) {
+                if (response.status === 200) {
+                    console.log("success")
 
+                // Redirect the user after a delay
+                // setTimeout(function() {
+                //     window.location.href = "/path/to/redirect";
+                // }, 3000);
+                } else {
+    
+                }
+            },
+            error: function(data) {
+                console.log(data);
+            },
+            complete: function() {
+                btn.prop('disabled', false).html(originalText);
+            }
+        });
+    }
+    
+
+    </script>
    </main>
   
    <!--=============== SCROLL UP ===============-->
@@ -104,7 +150,6 @@
    <script src="{% static 'core/assets/js/main.js' %}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-   <script src="/assets/js/anon.js"></script>
 </body>
 </html>
 

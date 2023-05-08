@@ -2,7 +2,9 @@ from django.shortcuts import render
 from .models import AnswerModel,QuestionModel
 from .pipelines import pipeline
 import os
-
+from urllib.parse import parse_qs
+import json
+from django.http import  JsonResponse
 
 
 np = pipeline('multitask-qa-qg')
@@ -49,6 +51,14 @@ def details_page(request):
         "questions":query_obj
     }
     return render(request,'core/details.html',context)
+
+def processPassage(request):
+    form_data = request.body
+    form_dict = parse_qs(form_data.decode('utf-8'))
+    passage = form_dict.get('passage', [''])[0]
+
+    print(passage)
+    return JsonResponse({"status":200})
 
 
 #taskss
