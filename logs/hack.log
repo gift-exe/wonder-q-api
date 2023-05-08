@@ -1047,3 +1047,4 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 54: 'e
 2023-05-08 12:33:35,162 django.request WARNING  Not Found: /favicon.ico
 2023-05-08 12:34:16,980 django.request WARNING  Not Found: /favicon.ico
 2023-05-08 12:34:55,700 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 12:37:09,149 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.

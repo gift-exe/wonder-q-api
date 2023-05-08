@@ -23,18 +23,6 @@ def index(request):
         questions = []
         answers = []
         for qa_pair in response:
-            # question = QuestionModel(
-            #     question=qa_pair['question']
-                
-            # )
-            # question.save()
-
-            # answer = AnswerModel(
-            #     question=question,
-            #     answer=qa_pair['answer']
-            # )
-            # answer.save()
-
 
             questions.append(qa_pair['question'])            
             answers.append(qa_pair['answer'])
@@ -46,10 +34,7 @@ def index(request):
 
 
 def details_page(request):
-    # query_obj = AnswerModel.objects.all()
-    # context = {
-    #     "questions":query_obj
-    # }
+
     return render(request,'core/details.html')
 
 
