@@ -56,4 +56,3 @@ def processPassage(request):
         return JsonResponse({"status":200,"questions":questions, "answers":answers})
     except Exception as e:
             return JsonResponse({"status":500,"error":str(e)})
-            
