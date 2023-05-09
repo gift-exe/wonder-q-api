@@ -39,16 +39,21 @@ def details_page(request):
 
 
 def processPassage(request):
-    form_data = request.body
-    form_dict = parse_qs(form_data.decode('utf-8'))
-    passage = form_dict.get('passage', [''])[0]
-    
-    questions = []
-    answers = []
 
-    response = np(str(passage))
+    try:
+        form_data = request.body
+        form_dict = parse_qs(form_data.decode('utf-8'))
+        passage = form_dict.get('passage', [''])[0]
         
-    for qa_pair in response:
-        questions.append(qa_pair['question'])            
-        answers.append(qa_pair['answer'])        
-    return JsonResponse({"status":200,"questions":questions, "answers":answers})
+        questions = []
+        answers = []
+
+        response = np(str(passage))
+            
+        for qa_pair in response:
+            questions.append(qa_pair['question'])            
+            answers.append(qa_pair['answer'])        
+        return JsonResponse({"status":200,"questions":questions, "answers":answers})
+    except Exception as e:
+            return JsonResponse({"status":500,"error":str(e)})
+            

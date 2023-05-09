@@ -1048,3 +1048,60 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 54: 'e
 2023-05-08 12:34:16,980 django.request WARNING  Not Found: /favicon.ico
 2023-05-08 12:34:55,700 django.request WARNING  Not Found: /assets/img/favicon.png
 2023-05-08 12:37:09,149 django.utils.autoreload INFO     /home/madvirus/Documents/ai_hackathon/core/views.py changed, reloading.
+2023-05-08 12:59:16,292 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 13:01:08,507 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: '756b-105-112-130-186.ngrok-free.app'. You may need to add '756b-105-112-130-186.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '756b-105-112-130-186.ngrok-free.app'. You may need to add '756b-105-112-130-186.ngrok-free.app' to ALLOWED_HOSTS.
+2023-05-08 13:01:08,799 django.request WARNING  Bad Request: /
+2023-05-08 13:01:11,127 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: '756b-105-112-130-186.ngrok-free.app'. You may need to add '756b-105-112-130-186.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '756b-105-112-130-186.ngrok-free.app'. You may need to add '756b-105-112-130-186.ngrok-free.app' to ALLOWED_HOSTS.
+2023-05-08 13:01:11,193 django.request WARNING  Bad Request: /
+2023-05-08 13:01:15,812 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: '756b-105-112-130-186.ngrok-free.app'. You may need to add '756b-105-112-130-186.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '756b-105-112-130-186.ngrok-free.app'. You may need to add '756b-105-112-130-186.ngrok-free.app' to ALLOWED_HOSTS.
+2023-05-08 13:01:15,875 django.request WARNING  Bad Request: /favicon.ico
+2023-05-08 13:01:24,556 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: '756b-105-112-130-186.ngrok-free.app'. You may need to add '756b-105-112-130-186.ngrok-free.app' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/madvirus/.local/lib/python3.10/site-packages/django/http/request.py", line 167, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '756b-105-112-130-186.ngrok-free.app'. You may need to add '756b-105-112-130-186.ngrok-free.app' to ALLOWED_HOSTS.
+2023-05-08 13:01:24,644 django.request WARNING  Bad Request: /favicon.ico
+2023-05-08 13:02:00,925 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-08 13:02:47,694 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 13:02:50,857 django.request WARNING  Not Found: /favicon.ico
+2023-05-08 13:03:05,698 django.security.csrf WARNING  Forbidden (Origin checking failed - https://756b-105-112-130-186.ngrok-free.app does not match any trusted origins.): /process/
+2023-05-08 13:03:16,134 django.security.csrf WARNING  Forbidden (Origin checking failed - https://756b-105-112-130-186.ngrok-free.app does not match any trusted origins.): /process/
+2023-05-08 13:03:29,638 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 13:03:53,205 django.request WARNING  Not Found: /assets/img/favicon.png
+2023-05-08 13:05:11,927 django.request WARNING  Not Found: /favicon.ico

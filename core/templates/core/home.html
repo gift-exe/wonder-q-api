@@ -59,7 +59,7 @@
       <!--==================== HOME ====================-->
       <section class="home" id="home">
         <div class="home__container container grid">
-            <img src="https://v1.cybersafecal.com/assets/img/body.jpg" alt="" class="home__img">
+            <img src="https://" alt="" class="home__img">
             <!-- <div class="home__img" >
                 <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_au4zdsr8.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay ></lottie-player>
             
@@ -108,7 +108,7 @@
         var originalText = btn.html();
         btn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Processing...');
         var formData = $(event.currentTarget.form).serialize();
-        // Your existing AJAX code here
+    
         console.log(formData)
         $.ajax({
             url: "/process/",
@@ -116,6 +116,7 @@
             data: formData,
             success: function(response) {
                 if (response.status === 200) {
+            
                     console.log("success")
                     console.log(response.questions)
                     console.log(response.answers)
@@ -133,8 +134,11 @@
     
                 }
             },
-            error: function(data) {
-                console.log(data);
+            error: function(response) {
+                if (response.status === 500){
+                    console.log(response.error)
+                }
+            
             },
             complete: function() {
                 btn.prop('disabled', false).html(originalText);
