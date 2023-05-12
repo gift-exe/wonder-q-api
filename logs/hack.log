@@ -1115,3 +1115,7 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '756b-105-112-1
 2023-05-09 10:19:30,221 django.request WARNING  Not Found: /assets/img/favicon.png
 2023-05-09 10:19:57,109 django.request WARNING  Not Found: /favicon.ico
 2023-05-09 10:37:05,961 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-12 10:44:38,119 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-12 10:45:29,620 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-05-12 10:45:43,520 django.request WARNING  Not Found: /eb398044a7d9129e6542641f0cfe8983.svg
+2023-05-12 10:45:43,521 django.request WARNING  Not Found: /55ec3367395b02d581c3ce85a1eb800b.svg
