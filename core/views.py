@@ -5,6 +5,8 @@ import os
 from urllib.parse import parse_qs
 import json
 from django.http import  JsonResponse
+from PyPDF2 import PdfReader
+
 
 
 np = pipeline('multitask-qa-qg')
@@ -56,3 +58,20 @@ def processPassage(request):
         return JsonResponse({"status":200,"questions":questions, "answers":answers})
     except Exception as e:
             return JsonResponse({"status":500,"error":str(e)})
+
+
+def processDocumentPassage(request):
+    file = request.FILES.get('pdf')
+    reder = PdfReader('file')
+    print(len(reder))
+
+    page = reder.pages[0]
+
+    text = page.extract_text()
+    print(text)
+    
+
+
+    """or"""
+
+
