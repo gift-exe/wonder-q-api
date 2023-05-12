@@ -88,7 +88,9 @@ def processDocumentPassage(passage_filename):
     questions = []
     answers = []
 
-    for one_para in sub_paragraph:
+    for one_para in sub_paragraphs:
+        print(one_para)
+    
         response = np(str(one_para))
                 
         for qa_pair in response:
