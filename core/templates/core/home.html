@@ -78,29 +78,24 @@
         </div>
     </section>
           
-          <section class="contact section container" id="contact">
-           <div class="contact__container grid">
-               <div class="contact__box">
-               <form class="contact__form" name="passageform">
-                {% csrf_token %}
-                   <div class="contact__inputs">
-                       <div class="contact__content contact__area">
-                        <textarea name="passage" placeholder=" " id="passage" class="contact__input"></textarea>
-                        <label for="" class="contact__label">Paste passage</label>
-                    </div>
-
-                   </div>
-                    <div class="button">
-                   <button id="contact" onclick="BtnContact(event)" class="spam-btn button button--flex">
-                       Generate Questions
-                       <i class="ri-arrow-right-up-line button__icon"></i>
-                   </button>
-                   </div>
-               </form>
-    
-            
-           </div>
-       </section>
+    <section class="contact section container" id="contact">
+        <div class="contact__container grid">
+            <div class="contact__box">
+            <form class="contact__form" name="passageform">
+            {% csrf_token %}
+                <div class="button">
+                    Select File <input type="file" name="pdf_file" accept=".pdf">
+                </div>
+                
+                <div class="button">
+                    <button id="contact" onclick="BtnContact(event)" class="spam-btn button button--flex">
+                        Upload
+                        <i class="ri-arrow-right-up-line button__icon"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
        <script>
        function BtnContact(event) {
         event.preventDefault();
