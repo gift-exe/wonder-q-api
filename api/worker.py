@@ -1,7 +1,7 @@
 from urllib.parse import parse_qs
 import json
 from PyPDF2 import PdfReader
-from .pipelines import pipeline
+from pipelines import pipeline
 
 np = pipeline('multitask-qa-qg')
 

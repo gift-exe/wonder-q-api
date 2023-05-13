@@ -1,8 +1,9 @@
-from fastapi import FastAPI,Depends,Request,Body,UploadFile,File
+from http.client import HTTPException
+from fastapi import FastAPI,Depends,Request,Body,UploadFile,File, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware import Middleware
-from .schemas import PassageModel
-from .worker import processPassage,processLongPassage,processDocumentPassage
+from schemas import PassageModel
+from worker import processPassage,processLongPassage,processDocumentPassage
 
 
 
