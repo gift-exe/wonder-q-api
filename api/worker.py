@@ -1,12 +1,13 @@
 from urllib.parse import parse_qs
 import json
-from fastapi.response import JsonResponse
 from PyPDF2 import PdfReader
+from .pipelines import pipeline
+
+np = pipeline('multitask-qa-qg')
 
 
 
-
-def processPassage(passage:str):
+async def processPassage(passage:str):
 
     try:
         
@@ -18,13 +19,49 @@ def processPassage(passage:str):
         for qa_pair in response:
             questions.append(qa_pair['question'])            
             answers.append(qa_pair['answer'])        
-        return JsonResponse({"status":200,"questions":questions, "answers":answers})
+        return {"status":200,"questions":questions, "answers":answers}
     except Exception as e:
-            return JsonResponse({"status":500,"error":str(e)})
+            return {"status":500,"error":str(e)}
+
+
+async def processLongPassage(passage: str):
+
+    try:
+        paragraphs = passage.split('\n')
+        # omo tktv
+        sub_paragraphs = []
+        for paragraph in paragraphs:
+            words = paragraph.split()
+            sub_paragraph = ""
+            for word in words:
+                if len(sub_paragraph.split()) < 400:
+                    sub_paragraph += word + " "
+                else:
+                    sub_paragraphs.append(sub_paragraph.strip())
+                    sub_paragraph = word + " "
+            if sub_paragraph.strip():
+                sub_paragraphs.append(sub_paragraph.strip())
+
+        questions = []
+        answers = []
+        # process one after the other
+        for one_para in sub_paragraphs:
+            response = np(str(one_para))
+            for qa_pair in response:
+                question = qa_pair['question']
+                answer = qa_pair['answer']
+                questions.append(question)
+                answers.append(answer)
+
+        return {"status": 200, "questions": questions, "answers": answers}
+    except Exception as e:
+        return {"status": 500, "error": str(e)}
 
 
 
-def processDocumentPassage(passage_filename):
+
+
+async def processDocumentPassage(passage_filename):
     text = ""
     paragraphs = []
     with open(passage_filename, 'rb') as f:
@@ -52,13 +89,13 @@ def processDocumentPassage(passage_filename):
     questions = []
     answers = []
 
+    # process one after the other
     for one_para in sub_paragraphs:
-        print(one_para)
-    
         response = np(str(one_para))
-                
         for qa_pair in response:
-            questions.append(qa_pair['question'])            
-            answers.append(qa_pair['answer'])  
+            question = qa_pair['question']
+            answer = qa_pair['answer']
+            questions.append(question)
+            answers.append(answer)
         
     return {"question":questions,"answer":answers}
