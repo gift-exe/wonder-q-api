@@ -1,7 +1,6 @@
 from fastapi import FastAPI,Depends,Request,Body,UploadFile,File
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware import Middleware
-from typing import Annotated
 from .schemas import PassageModel
 from .worker import processPassage,processLongPassage,processDocumentPassage
 
