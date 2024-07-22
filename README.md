@@ -1,4 +1,4 @@
-# read small
+# Really Brief Brief
 So basically, you can generate personalized study questions from your course work, all you have to do is to pass in your course material, like pdf, or word document : ) 
 <p> install requirements, activate env and then</p><br>
 <p><b> run server</b>: uvicorn api.main:app --reload </p>
