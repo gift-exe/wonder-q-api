@@ -7,4 +7,4 @@ So basically, you can generate personalized study questions from your course wor
 <p>use postman, insomnia or any other out there</p>
 <p> if you no get am, run the server then head over to 'http://127.0.0.1:8000/docs' </p>
 ---
-### This is a link to the frontend (codebase)[https://github.com/godszn/WonderQUI] courtesy of Astro godszn (^_^')
+### This is a link to the frontend [codebase](https://github.com/godszn/WonderQUI) courtesy of Astro godszn (^_^')
