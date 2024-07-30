@@ -11,4 +11,4 @@ Step 4: Run server -> `uvicorn api.main:app --reload`
 You can use postman, or curl (lol) or your prefered method of sending https requests  
 You can view the API docs at `http://127.0.0.1:8000/docs`
 
-### This is a link to a webapp <a href="https://github.com/godszn/WonderQUI">codebase</a> created for this API, courtesy of Astro godszn (^_^')
+### This is a link to a webapp <a href="https://github.com/godszn/WonderQUI">codebase</a> created for this API, courtesy of Astro godszn ('^_^)
